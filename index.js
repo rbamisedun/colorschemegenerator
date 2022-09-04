@@ -31,7 +31,7 @@ btn.addEventListener("click", getColors)
 
 // Accessing the API  
     function getColors () {
-          fetch(`https://www.thecolorapi.com/scheme?hex=${chosenColor.value.substr(1,7)}&mode=${chosenColorScheme.value.toLowerCase()}&count=5`)
+          fetch(`"https://www.thecolorapi.com/scheme?hex=${chosenColor.value.substr(1,7)}&mode=${chosenColorScheme.value.toLowerCase()}&count=5"`)
          .then((response)=> (response.json()))
         .then((data)=>    
           {for (let i = 0; i< data.colors.length; i++){
